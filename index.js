@@ -33,6 +33,36 @@ server.post('/bot/webhook', line.middleware(line_config), (req, res, next) => {
                     type: "text",
                     text: "しても無駄です"
                 }));
+            }　else if (event.message.text == "若丸"){
+                events_processed.push(bot.replyMessage(event.replyToken, {
+                    type: "text",
+                    text: "最近永田とどう？"
+                }));
+            }　else if (event.message.text == "ゆうすけ"){
+                events_processed.push(bot.replyMessage(event.replyToken, {
+                    type: "text",
+                    text: "ウイイレざこ"
+                }));
+            }　else if (event.message.text == "江端"){
+                events_processed.push(bot.replyMessage(event.replyToken, {
+                    type: "text",
+                    text: "おまわりさんこいつです"
+                }));
+            } else if (event.message.text == "かきうちくんやな〜"){
+                events_processed.push(bot.replyMessage(event.replyToken, {
+                    type: "text",
+                    text: "ありがと"
+                }));
+            } else if (event.message.text == "お酒"){
+                events_processed.push(bot.replyMessage(event.replyToken, {
+                    type: "text",
+                    text: "お前らすぐ吐くやん。俺だけやで、吐かんの。"
+                }));
+            }　else if (event.message.text == "ビール"){
+                events_processed.push(bot.replyMessage(event.replyToken, {
+                    type: "text",
+                    text: "ゆうすけ飲もや"
+                }));
             }
 
         }
