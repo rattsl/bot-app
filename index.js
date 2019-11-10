@@ -33,7 +33,7 @@ server.post('/bot/webhook', line.middleware(line_config), (req, res, next) => {
                     type: "text",
                     text: "しても無駄です"
                 }));
-            }　else if (event.message.text == "若丸"){
+            }　else if (event.message.text == "わかまる"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
                     text: "最近永田とどう？"
@@ -62,6 +62,16 @@ server.post('/bot/webhook', line.middleware(line_config), (req, res, next) => {
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
                     text: "ゆうすけ飲もや"
+                }));
+            }　else if (event.message.text == "のもや"){
+                events_processed.push(bot.replyMessage(event.replyToken, {
+                    type: "text",
+                    text: "絶対にいや"
+                }));
+            }　else if (event.message.text == "飲もや"){
+                events_processed.push(bot.replyMessage(event.replyToken, {
+                    type: "text",
+                    text: "死んでもいや"
                 }));
             }
 
