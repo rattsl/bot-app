@@ -46,7 +46,7 @@ server.post('/bot/webhook', line.middleware(line_config), (req, res, next) => {
             }　else if (event.message.text == "江端"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "おまわりさんこいつです"
+                    text: "頭おかしいやん"
                 }));
             } else if (event.message.text == "かきうちくんやな〜"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
