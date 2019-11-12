@@ -41,7 +41,7 @@ server.post('/bot/webhook', line.middleware(line_config), (req, res, next) => {
             }　else if (event.message.text == "ゆうすけ"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "ウイイレざこ"
+                    text: "新幹線代出して"
                 }));
             }　else if (event.message.text == "江端"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
