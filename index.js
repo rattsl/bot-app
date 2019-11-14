@@ -27,36 +27,36 @@ server.post('/bot/webhook', line.middleware(line_config), (req, res, next) => {
         // この処理の対象をイベントタイプがメッセージで、かつ、テキストタイプだった場合に限定。
         if (event.type == "message" && event.message.type == "text"){
             // ユーザーからのテキストメッセージが「こんにちは」だった場合のみ反応。
-            if (event.message.text == "就活"){
+            if (event.message.text == "はりもと"){
                 // replyMessage()で返信し、そのプロミスをevents_processedに追加。
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "しても無駄です"
+                    text: "ちょれい"
                 }));
-            }　else if (event.message.text == "わかまる"){
+            }　else if (event.message.text == "おはよう"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "最近永田とどう？"
+                    text: "Botにしかおはようって送れないんか。"
                 }));
-            }　else if (event.message.text == "ゆうすけ"){
+            }　else if (event.message.text == "サッカーしようぜ！"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "新幹線代出して"
+                    text: "お前ボールな"
                 }));
-            }　else if (event.message.text == "江端"){
+            }　else if (event.message.text == "いい街はどこ？"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "頭おかしいやん"
+                    text: "秋葉原"
                 }));
-            } else if (event.message.text == "かきうちくんやな〜"){
+            } else if (event.message.text == "目の前に爆弾がある！"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "ありがと"
+                    text: "5秒後に爆発します。"
                 }));
-            } else if (event.message.text == "お酒"){
+            } else if (event.message.text == "ただいま"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "お前らすぐ吐くやん。俺だけやで、吐かんの。"
+                    text: "おかえり"
                 }));
             }　else if (event.message.text == "ビール"){
                 events_processed.push(bot.replyMessage(event.replyToken, {
